@@ -4,8 +4,8 @@
     docker build -t mft-frontend-react-hackathon-v2 .
     docker run -p 3000:3000 mft-frontend-react-hackathon-v2
 
-# Getting Started with flask app
-  Download the project and run it via PyCharm or just clone the repository using the command:
+# Getting Started with react app
+  Download the project and run it via WebStorm or just clone the repository using the command:
 
       git clone https://github.com/mft-nikita-ermakov/mft-frontend-react-hackathon-v2.git
 
