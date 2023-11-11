@@ -1,0 +1,176 @@
+.ag-format-container-form {
+    max-width: 1142px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ag-courses-box-form {
+    margin: 5vh 1% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-return-file-img {
+    margin: 5vh 1% 1%;
+    width: 512px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-return-file-video {
+    margin: 5vh 1% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-return-file-img .img-return-file {
+    border-radius: 5px;
+    max-width: 100%;
+    height: 100%;
+    align-self: center;
+}
+
+.ag-courses-box-form .input-upload-file, .ag-courses-box-form .input-upload-file {
+    margin-bottom: 10px;
+}
+
+.form-submit-file {
+    background: rgb(27,48,158);
+    background: radial-gradient(circle, rgba(27,48,158,0.19511554621848737) 0%, rgba(223,76,237,0.19511554621848737) 100%);
+    border-radius: 5px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.button-submit {
+    border-radius: 5px;
+    border: none;
+    margin: 1%;
+    float: left;
+    display: flex;
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: none;
+    font-size: clamp(18px, 3vw, 28px);
+    transition: 0.5s;
+}
+
+.button-submit:hover {
+    background: rgb(70,133,252);
+    background: radial-gradient(circle, rgba(214,142,219,1) 100%, rgba(70,133,252,1) 0%);
+    color: white;
+    transition: 0.5s;
+}
+
+.input-upload-file {
+    border-radius: 5px;
+    margin: 1%;
+    float: left;
+    display: flex;
+    color: white;
+    background: rgb(27,48,158);
+    background: radial-gradient(circle, rgba(27,48,158,0.19511554621848737) 0%, rgba(223,76,237,0.19511554621848737) 100%);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: clamp(18px, 3vw, 28px);
+    transition: 0.5s;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    border-radius: 5px;
+    background: rgb(70,133,252);
+    background: radial-gradient(circle, rgba(70,133,252,1) 0%, rgba(214,142,219,1) 100%);
+    border: none;
+    padding: 14px 16px;
+    color: black;
+}
+
+.custom-style-for-text-success {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: white;
+}
+
+#videoPlayer {
+    border-radius: 5px;
+    max-width: 512px;
+    max-height: 512px;
+    position: relative;
+}
+
+#videoPlayer::after {
+    content: "X";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+}
+
+.img-return-from-neuro {
+    border-radius: 5px;
+    max-width: 512px;
+    max-height: 512px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.button-submit-get-video {
+    border-radius: 5px;
+    border: none;
+    margin: 1%;
+    float: left;
+    display: flex;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: none;
+    font-size: clamp(18px, 3vw, 28px);
+    transition: 0.5s;
+}
+
+.button-submit-get-video:hover {
+    background: rgb(70,133,252);
+    background: radial-gradient(circle, rgba(214,142,219,1) 100%, rgba(70,133,252,1) 0%);
+    color: white;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 810px) {
+    .form-submit-file{
+        flex-direction: column;
+    }
+    .input-upload-file {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-return-file {
+        width: 400px;
+        height: 400px;
+    }
+}

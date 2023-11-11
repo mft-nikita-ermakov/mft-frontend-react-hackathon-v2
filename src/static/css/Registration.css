@@ -1,0 +1,302 @@
+.registration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.registration .context h1{
+    text-align: center;
+    color: lavender;
+    font-size: 50px;
+}
+.registration h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.registration .area{
+    background: black;
+    background: -webkit-linear-gradient(to left, rgb(78, 84, 200), #4e54c8);
+    width: 100%;
+    height:100vh;
+}
+
+.registration .circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.registration .circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.registration .circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.registration .circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.registration .circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.registration .circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.registration .circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.registration .circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.registration .circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.registration .circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.registration .circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.registration .circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.registration .signup
+{
+    position: absolute;
+    width: 400px;
+    background: #222;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+.registration .signup .content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.registration .signup .content h2
+{
+    font-size: 2em;
+    background: rgb(70,133,252);
+    background: radial-gradient(circle, rgba(70,133,252,1) 0%, rgba(214,142,219,1) 100%);
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.registration .signup .content .form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.registration .signup .content .form .inputBox
+{
+    position: relative;
+    width: 100%;
+}
+.registration .signup .content .form .inputBox input
+{
+    position: relative;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+.registration .signup .content .form .inputBox i
+{
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.registration .signup .content .form .inputBox input:focus ~ i,
+.registration .signup .content .form .inputBox input:valid ~ i
+{
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: wheat;
+}
+.registration .signup .content .form .links
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.registration .signup .content .form .links a
+{
+    color: white;
+    text-decoration: none;
+}
+.registration .signup .content .form .links a:nth-child(2)
+{
+    color: #FDF4E3;
+}
+.registration .signup .content .form .links a:hover{
+    color: #444444;
+    transition: color 0.5s ease-in-out;
+}
+.registration .signup .content .form .links a:nth-child(2):hover {
+    color: #444444;
+    transition: color 0.5s ease-in-out;
+}
+.registration .signup .content .form .inputBox input[type="submit"]
+{
+    padding: 10px;
+    background: #675BCF;
+    color: white;
+    font-weight: 600;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+.registration .signup .content .form .inputBox  input[type="submit"]:hover{
+    background-color:#77DD77;
+    color: black;
+    transition: background-color 0.5s ease-in-out;
+}
+.registration input[type="submit"]:active
+{
+    opacity: 0.6;
+}
+
+.div-for-radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.form-radio-btn-reg {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-radio-btn-reg input[type=radio] {
+    display: none;
+}
+.form-radio-btn-reg label {
+    color: #444444;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 15px;
+    line-height: 34px;
+    background: transparent;
+    border: 2px solid #D65E86;
+    border-radius: 5px;
+    user-select: none;
+}
+
+/* Checked */
+.form-radio-btn-reg input[type=radio]:checked + label {
+    border: none;
+    color: black;
+    background: #8271D6;
+    background: linear-gradient(to right, #8271D6 30%, #D65E86 100%);
+}
+
+/* Hover */
+.form-radio-btn-reg label:hover {
+    color: white;
+    border-color: #8271D6;
+}
+
+/* Disabled */
+.form-radio-btn-reg input[type=radio]:disabled + label {
+    background: #efefef;
+    color: #666;
+}
