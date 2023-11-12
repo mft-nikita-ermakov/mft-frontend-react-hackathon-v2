@@ -1,3 +1,15 @@
+# Getting Started with Docker
+  In the project directory, you can run:
+  
+    docker build -t mft-frontend-react-hackathon-v2 .
+    docker run -p 3000:3000 mft-frontend-react-hackathon-v2
+
+# Getting Started with react app
+  Download the project and run it via WebStorm or just clone the repository using the command:
+
+      git clone https://github.com/mft-nikita-ermakov/mft-frontend-react-hackathon-v2.git
+
+    
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
